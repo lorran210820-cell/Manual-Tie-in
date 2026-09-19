@@ -1,72 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0b3154"
+        content="width=device-width, initial-scale=1.0"
     >
 
     <meta
         name="description"
-        content="Tie-in Digital da ENESA Engenharia para integração do transportador TR-2091KS-03 com a casa de transferência CT-2032KS-08 no Projeto Serra Sul S11D."
+        content="Tie-in Digital - TR-2091KS-03 com CT-2032KS-08 - Projeto Serra Sul S11D"
     >
+
+    <meta name="theme-color" content="#092f4f">
 
     <title>
         Tie-in Digital | TR-2091KS-03 × CT-2032KS-08
     </title>
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
 
-
-<!-- =======================================================
+<!-- ======================================================
      HEADER
-======================================================= -->
+====================================================== -->
 
 <header class="header">
 
     <div class="shell header-row">
 
-        <!-- LOGOS -->
-
-        <a
-            class="brand"
-            href="#inicio"
-            aria-label="Ir para o início"
-        >
+        <a href="#inicio" class="brand" aria-label="Início">
 
             <img
                 src="assets/img/logo-vale.png"
                 alt="Vale"
             >
-
-            <b style="display:none;">
-                VALE
-            </b>
 
             <span></span>
 
@@ -75,64 +48,31 @@
                 alt="ENESA Engenharia"
             >
 
-            <b style="display:none;">
-                ENESA
-            </b>
-
         </a>
 
 
-        <!-- MENU DESKTOP -->
+        <nav id="nav">
 
-        <nav
-            id="nav"
-            aria-label="Navegação principal"
-        >
+            <a href="#visao">Visão Geral</a>
 
-            <a href="#inicio">
-                Início
-            </a>
+            <a href="#escopo">Escopo</a>
 
-            <a href="#visao">
-                Visão Geral
-            </a>
+            <a href="#mapa">Contexto / 3D</a>
 
-            <a href="#escopo">
-                Escopo
-            </a>
+            <a href="#execucao">Execução</a>
 
-            <a href="#cronograma">
-                Cronograma
-            </a>
+            <a href="#recursos">Recursos</a>
 
-            <a href="#mapa">
-                Mapa / 3D
-            </a>
+            <a href="#seguranca">SSMA</a>
 
-            <a href="#equipe">
-                Equipe
-            </a>
+            <a href="#qualidade">Qualidade</a>
 
-            <a href="#seguranca">
-                Segurança
-            </a>
+            <a href="#documentos">Documentos</a>
 
-            <a href="#qualidade">
-                Qualidade
-            </a>
-
-            <a href="#documentos">
-                Documentos
-            </a>
-
-            <a href="#acompanhamento">
-                Acompanhamento
-            </a>
+            <a href="#acompanhamento">Acompanhamento</a>
 
         </nav>
 
-
-        <!-- FERRAMENTAS -->
 
         <div class="tools">
 
@@ -148,9 +88,10 @@
             <button
                 class="icon"
                 type="button"
-                aria-label="Notificações"
+                onclick="document.getElementById('emergencia').scrollIntoView({behavior:'smooth'})"
+                aria-label="Emergência"
             >
-                ♢
+                ◇
             </button>
 
             <button
@@ -158,7 +99,6 @@
                 id="hamb"
                 type="button"
                 aria-label="Abrir menu"
-                aria-expanded="false"
             >
                 ☰
             </button>
@@ -170,55 +110,23 @@
 </header>
 
 
-<!-- =======================================================
-     MAIN
-======================================================= -->
+<!-- ======================================================
+     HERO
+====================================================== -->
 
 <main>
 
-
-<!-- =======================================================
-     HERO
-======================================================= -->
-
-<section
-    class="hero"
-    id="inicio"
->
-
-    <!--
-        IMAGEM REAL DO MODELO 3D
-
-        Esta mesma imagem também poderá ser utilizada
-        na seção Mapa / 3D.
-    -->
+<section class="hero" id="inicio">
 
     <div
-        class="hero-bg project-image"
-        data-src="assets/img/3D_01.png"
-    >
-
-        <div class="placeholder">
-
-            <b>
-                MODELO 3D DO TIE-IN
-            </b>
-
-            <small>
-                assets/img/3D_01.png
-            </small>
-
-        </div>
-
-    </div>
-
+        class="hero-bg"
+        style="background-image:url('assets/img/3D_01.png')"
+    ></div>
 
     <div class="hero-overlay"></div>
 
 
     <div class="shell hero-content">
-
-        <!-- TEXTO PRINCIPAL -->
 
         <div>
 
@@ -226,29 +134,20 @@
                 PROJETO SERRA SUL S11D · CANAÃ DOS CARAJÁS/PA
             </div>
 
-
             <div class="micro">
-
                 USINA DE BENEFICIAMENTO
-
                 <i></i>
-
                 LINHA C
-
             </div>
 
 
             <h1>
 
-                <span>
-                    TIE-IN
-                </span>
+                <span>TIE-IN DIGITAL</span>
 
                 TR-2091KS-03
 
-                <em>
-                    ×
-                </em>
+                <em>×</em>
 
                 CT-2032KS-08
 
@@ -257,18 +156,17 @@
 
             <p>
                 Integração do Transportador de Correia
-                <br>
                 com Casa de Transferência Existente
             </p>
 
 
             <div class="motto">
 
-                Segurança
+                Planejamento
 
                 <i></i>
 
-                Planejamento
+                Segurança
 
                 <i></i>
 
@@ -276,39 +174,29 @@
 
                 <i></i>
 
-                Resultados
+                Qualidade
+
+                <i></i>
+
+                Comissionamento
 
             </div>
 
         </div>
 
 
-        <!-- STATUS -->
-
         <aside class="status-card">
 
-            <small>
-                STATUS DO TIE-IN
-            </small>
-
+            <small>STATUS DO TIE-IN</small>
 
             <strong>
-
                 <i></i>
-
                 PLANEJADO
-
             </strong>
 
+            <span>JANELA PREVISTA</span>
 
-            <span>
-                Janela prevista
-            </span>
-
-
-            <b>
-                11 — 30 JAN 2027
-            </b>
+            <b>11 — 30 JAN 2027</b>
 
         </aside>
 
@@ -317,92 +205,42 @@
 </section>
 
 
-<!-- =======================================================
-     KPIs
-======================================================= -->
+<!-- ======================================================
+     KPI PRINCIPAL
+====================================================== -->
 
-<section
-    class="kpis"
-    aria-label="Indicadores principais do Tie-in"
->
+<section class="kpis">
 
     <div class="shell kpi-grid">
 
         <div>
-
-            <b>
-                11/01/2027
-            </b>
-
-            <span>
-                Início previsto
-            </span>
-
+            <b>11/01/2027</b>
+            <span>Início previsto</span>
         </div>
 
-
         <div>
-
-            <b>
-                30/01/2027
-            </b>
-
-            <span>
-                Término previsto
-            </span>
-
+            <b>30/01/2027</b>
+            <span>Término previsto</span>
         </div>
 
-
         <div>
-
-            <b>
-                20 DIAS
-            </b>
-
-            <span>
-                Duração
-            </span>
-
+            <b>20 dias</b>
+            <span>Janela total</span>
         </div>
 
-
         <div>
-
-            <b>
-                3 TURNOS
-            </b>
-
-            <span>
-                Regime
-            </span>
-
+            <b>3 turnos</b>
+            <span>Regime</span>
         </div>
 
-
         <div>
-
-            <b>
-                1 FRENTE
-            </b>
-
-            <span>
-                Equipe dedicada
-            </span>
-
+            <b>1 frente</b>
+            <span>Equipe dedicada</span>
         </div>
 
-
         <div>
-
-            <b>
-                4 +
-            </b>
-
-            <span>
-                Disciplinas integradas
-            </span>
-
+            <b>Linha C</b>
+            <span>Área de execução</span>
         </div>
 
     </div>
@@ -410,57 +248,45 @@
 </section>
 
 
-<!-- =======================================================
-     ACESSO RÁPIDO
-======================================================= -->
+<!-- ======================================================
+     NAVEGAÇÃO RÁPIDA
+====================================================== -->
 
-<section
-    class="quick"
-    aria-label="Acesso rápido"
->
+<section class="quick">
 
     <div class="shell">
 
-        <div
-            class="quick-grid"
-            id="quick"
-        ></div>
+        <div class="quick-grid" id="quick"></div>
 
     </div>
 
 </section>
 
 
-<!-- =======================================================
+<!-- ======================================================
      VISÃO GERAL
-======================================================= -->
+====================================================== -->
 
-<section
-    class="section"
-    id="visao"
->
+<section class="section" id="visao">
 
     <div class="shell">
-
 
         <div class="section-head">
 
             <div>
 
-                <span class="tag">
-                    01 · CONTEXTO
-                </span>
+                <span class="tag">01 · VISÃO GERAL</span>
 
                 <h2>
-                    Visão geral do Tie-in
+                    Plano de Trabalho Digital
                 </h2>
 
             </div>
 
-
             <p>
-                Central digital executiva para consulta rápida
-                durante planejamento, parada, execução e liberação.
+                Visão executiva da intervenção,
+                objetivo, aplicação e condições gerais
+                do Tie-in.
             </p>
 
         </div>
@@ -468,82 +294,38 @@
 
         <div class="overview-grid">
 
+            <article class="overview-main card">
 
-            <article class="card overview-main">
-
-                <h3>
-                    Objetivo
-                </h3>
-
+                <h3>Resumo Executivo</h3>
 
                 <p class="lead">
 
-                    Realizar a interligação mecânica e elétrica
-                    do transportador
-
-                    <b>
-                        TR-2091KS-03
-                    </b>
-
-                    à casa de transferência
-
-                    <b>
-                        CT-2032KS-08
-                    </b>,
-
-                    garantindo integração segura, qualidade
-                    e atendimento à janela programada.
+                    Execução do Tie-in do transportador
+                    TR-2091KS-03 com a casa de transferência
+                    existente CT-2032KS-08, contemplando
+                    atividades estruturais, mecânicas,
+                    elétricas, lançamento da correia,
+                    vulcanização, testes e comissionamento.
 
                 </p>
 
 
                 <div class="facts">
 
-
                     <div>
-
-                        <small>
-                            LOCAL
-                        </small>
-
-                        <b>
-                            Usina de Beneficiamento · Linha C
-                        </b>
-
+                        <small>EMPRESA EXECUTORA</small>
+                        <b>ENESA Engenharia</b>
                     </div>
 
-
                     <div>
-
-                        <small>
-                            SISTEMAS ENVOLVIDOS
-                        </small>
-
-                        <b>
-                            TR-2091KS-03 ·
-                            CT-2032KS-08 ·
-                            SE-2032KS-03
-                        </b>
-
+                        <small>LOCAL</small>
+                        <b>CT-2032KS-08 / TR-2091KS-03</b>
                     </div>
 
-
                     <div>
-
-                        <small>
-                            ESCOPO
-                        </small>
-
-                        <b>
-                            Estrutural ·
-                            Mecânica ·
-                            Elétrica ·
-                            Correia ·
-                            Comissionamento
-                        </b>
-
+                        <small>PROJETO</small>
+                        <b>Serra Sul S11D</b>
                     </div>
-
 
                 </div>
 
@@ -552,12 +334,13 @@
 
             <aside class="quote">
 
-                “Integração segura e eficiente para garantir
-                a continuidade operacional da usina e o aumento
-                da capacidade de produção.”
+                <div>
+                    Integração física, elétrica e operacional
+                    entre o novo transportador e o sistema
+                    existente.
+                </div>
 
             </aside>
-
 
         </div>
 
@@ -566,14 +349,11 @@
 </section>
 
 
-<!-- =======================================================
+<!-- ======================================================
      ESCOPO
-======================================================= -->
+====================================================== -->
 
-<section
-    class="section alt"
-    id="escopo"
->
+<section class="section alt" id="escopo">
 
     <div class="shell">
 
@@ -581,62 +361,79 @@
 
             <div>
 
-                <span class="tag">
-                    02 · ESCOPO
-                </span>
+                <span class="tag">02 · ESCOPO</span>
 
                 <h2>
-                    Escopo por disciplina
+                    Escopo da Intervenção
                 </h2>
 
             </div>
 
+            <p>
+                Principais disciplinas e serviços
+                envolvidos no Tie-in.
+            </p>
+
         </div>
 
-
-        <!-- Gerado pelo script.js -->
 
         <div
             class="scope-grid"
             id="scopeGrid"
         ></div>
 
+
+        <div style="margin-top:28px">
+
+            <article class="card overview-main">
+
+                <h3>Método de Execução</h3>
+
+                <p>
+
+                    A intervenção contempla desenergização
+                    e bloqueio do circuito, confirmação de
+                    energia zero, aterramento temporário,
+                    adequações estruturais, interligações
+                    mecânicas e elétricas, lançamento da
+                    correia, vulcanização, inspeções,
+                    testes e posterior reenergização
+                    controlada.
+
+                </p>
+
+            </article>
+
+        </div>
+
     </div>
 
 </section>
 
 
-<!-- =======================================================
-     MAPA / MODELO 3D
-======================================================= -->
+<!-- ======================================================
+     CONTEXTO / MAPA / 3D
+====================================================== -->
 
-<section
-    class="section"
-    id="mapa"
->
+<section class="section" id="mapa">
 
     <div class="shell">
-
 
         <div class="section-head">
 
             <div>
 
-                <span class="tag">
-                    03 · INTERFACE
-                </span>
+                <span class="tag">03 · CONTEXTO DA INTERVENÇÃO</span>
 
                 <h2>
-                    Localização e modelo 3D
+                    Localização e Interface
                 </h2>
 
             </div>
 
-
             <p>
-                Referências visuais para identificação da área,
-                dos equipamentos envolvidos e do ponto de
-                integração do Tie-in.
+                Visualização do ponto de integração
+                entre TR-2091KS-03 e CT-2032KS-08.
             </p>
 
         </div>
@@ -644,61 +441,49 @@
 
         <div class="map-card card">
 
-
-            <!-- CONTROLES -->
-
             <div class="map-toolbar">
-
 
                 <button
                     class="active"
-                    type="button"
                     data-map="assets/img/3D_01.png"
                 >
-                    Vista 3D
+                    Visão 3D
                 </button>
 
-
                 <button
-                    type="button"
                     data-map="assets/img/Maps_01.png"
                 >
-                    Localização
+                    Mapa
                 </button>
 
-
                 <button
-                    type="button"
                     data-map="assets/img/Planta_01.png"
                 >
-                    Planta Geral
+                    Planta
                 </button>
-
 
                 <button
-                    type="button"
                     data-map="assets/img/Campo_01.jpg"
                 >
-                    Fotos do Local
+                    Campo
                 </button>
-
 
             </div>
 
-
-            <!-- IMAGEM PRINCIPAL -->
 
             <div
                 class="map-view project-image"
                 id="mapView"
                 data-src="assets/img/3D_01.png"
+                style="background-image:url('assets/img/3D_01.png')"
             >
 
-                <div class="placeholder">
+                <div
+                    class="placeholder"
+                    style="display:none"
+                >
 
-                    <b>
-                        MODELO 3D DO TIE-IN
-                    </b>
+                    <b>IMAGEM DO PROJETO</b>
 
                     <small>
                         assets/img/3D_01.png
@@ -711,7 +496,6 @@
                     class="expand"
                     id="expand"
                     type="button"
-                    aria-label="Ampliar imagem"
                 >
                     ⛶ Ampliar
                 </button>
@@ -719,4 +503,1265 @@
             </div>
 
 
-            <!-- IDENTIFICAÇÃO DOS EQU
+            <div class="interface-summary">
+
+                <div>
+                    <small>NOVO TRANSPORTADOR</small>
+                    <strong>TR-2091KS-03</strong>
+                    <span>Transportador de Correia</span>
+                </div>
+
+                <div>
+                    <small>INTERFACE</small>
+                    <strong>×</strong>
+                    <span>Tie-in</span>
+                </div>
+
+                <div>
+                    <small>ESTRUTURA EXISTENTE</small>
+                    <strong>CT-2032KS-08</strong>
+                    <span>Casa de Transferência</span>
+                </div>
+
+                <div>
+                    <small>INTERVENÇÃO ELÉTRICA</small>
+                    <strong>SE-2032KS-03</strong>
+                    <span>Desenergização / Bloqueio</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     EXECUÇÃO
+====================================================== -->
+
+<section class="section alt" id="execucao">
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">04 · EXECUÇÃO</span>
+
+                <h2>
+                    Estratégia de Execução
+                </h2>
+
+            </div>
+
+            <p>
+                Jornada, cronograma, sequência executiva
+                e prontidão operacional.
+            </p>
+
+        </div>
+
+
+        <!-- JORNADA -->
+
+        <article
+            class="card overview-main"
+            id="jornada"
+        >
+
+            <h3>Jornada de Trabalho</h3>
+
+            <div class="facts">
+
+                <div>
+                    <small>1º TURNO</small>
+                    <b>07:30 — 17:30</b>
+                </div>
+
+                <div>
+                    <small>2º TURNO</small>
+                    <b>16:30 — 02:30</b>
+                </div>
+
+                <div>
+                    <small>3º TURNO</small>
+                    <b>22:00 — 07:00</b>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CRONOGRAMA -->
+
+        <div
+            id="cronograma"
+            style="margin-top:22px"
+        >
+
+            <div class="section-head">
+
+                <div>
+                    <span class="tag">
+                        04.1 · CRONOGRAMA
+                    </span>
+
+                    <h2>
+                        Programação Integrada
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="card table-wrap">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>#</th>
+                            <th>ATIVIDADE</th>
+                            <th>INÍCIO</th>
+                            <th>FIM</th>
+                            <th>DURAÇÃO</th>
+                            <th>STATUS</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="scheduleBody"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- PASSO A PASSO -->
+
+        <div style="margin-top:50px">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="tag">
+                        04.2 · PASSO A PASSO
+                    </span>
+
+                    <h2>
+                        Sequência Executiva
+                    </h2>
+
+                </div>
+
+                <p>
+                    Fluxo operacional desde a preparação
+                    até a liberação para operação.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="dark">
+
+        <div class="shell">
+
+            <div
+                class="timeline"
+                id="timeline"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- GO NO-GO -->
+
+    <div
+        class="shell"
+        id="prontidao"
+        style="padding-top:60px"
+    >
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    04.3 · GO / NO-GO
+                </span>
+
+                <h2>
+                    Prontidão para Execução
+                </h2>
+
+            </div>
+
+            <p>
+                Verificação dos principais pré-requisitos
+                antes da liberação da intervenção.
+            </p>
+
+        </div>
+
+
+        <div class="readiness">
+
+            <article class="card readiness-score">
+
+                <div
+                    class="gauge"
+                    id="gauge"
+                    style="--pct:0%"
+                >
+
+                    <div>
+
+                        <strong id="readyPct">
+                            0%
+                        </strong>
+
+                        <span>PRONTIDÃO</span>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <small>DECISÃO OPERACIONAL</small>
+
+                    <h3 id="goStatus">
+                        NO-GO
+                    </h3>
+
+                    <p>
+                        A liberação depende do atendimento
+                        dos requisitos críticos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="card checklist"
+                id="readinessList"
+            ></article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     RESPONSABILIDADES
+====================================================== -->
+
+<section class="section" id="responsabilidades">
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    05 · RESPONSABILIDADES
+                </span>
+
+                <h2>
+                    Governança da Intervenção
+                </h2>
+
+            </div>
+
+            <p>
+                Responsabilidades dos níveis de gestão,
+                segurança, supervisão e execução.
+            </p>
+
+        </div>
+
+
+        <div class="quality-grid">
+
+            <article class="card quality-card">
+
+                <h3>Preposto</h3>
+
+                <p>
+                    Garantir recursos, materiais,
+                    equipamentos, mão de obra,
+                    capacitação e aplicação do
+                    Plano de Trabalho.
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <h3>SESMT</h3>
+
+                <p>
+                    Apoiar a análise de riscos,
+                    especificar controles, divulgar
+                    o plano e fiscalizar as medidas
+                    de segurança.
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <h3>Supervisor</h3>
+
+                <p>
+                    Assegurar a execução do plano,
+                    condições dos equipamentos e
+                    atendimento às medidas preventivas.
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <h3>Encarregados</h3>
+
+                <p>
+                    Orientar as equipes, acompanhar
+                    a execução e garantir organização,
+                    isolamento e segurança da frente.
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <h3>Executantes</h3>
+
+                <p>
+                    Cumprir os procedimentos, participar
+                    da ART/PTS, inspecionar EPIs/EPCs
+                    e exercer o direito de recusa.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     RECURSOS
+====================================================== -->
+
+<section
+    class="section alt"
+    id="recursos"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    06 · RECURSOS
+                </span>
+
+                <h2>
+                    Equipe e Equipamentos
+                </h2>
+
+            </div>
+
+            <p>
+                Recursos humanos e equipamentos
+                previstos para a intervenção.
+            </p>
+
+        </div>
+
+
+        <div
+            class="two-col"
+            id="equipe"
+        >
+
+            <article class="card">
+
+                <h3>
+                    Composição da Equipe
+                </h3>
+
+                <div
+                    class="list-grid"
+                    id="team"
+                ></div>
+
+            </article>
+
+
+            <article
+                class="card"
+                id="equipamentos"
+            >
+
+                <h3>
+                    Equipamentos
+                </h3>
+
+                <div
+                    class="list-grid"
+                    id="equipment"
+                ></div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     SEGURANÇA
+====================================================== -->
+
+<section
+    class="section"
+    id="seguranca"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    07 · SSMA
+                </span>
+
+                <h2>
+                    Segurança da Intervenção
+                </h2>
+
+            </div>
+
+            <p>
+                Requisitos de segurança, normas,
+                riscos críticos e controles
+                operacionais.
+            </p>
+
+        </div>
+
+
+        <div class="pill-row">
+
+            <b>NR-01</b>
+            <b>NR-06</b>
+            <b>NR-10</b>
+            <b>NR-12</b>
+            <b>NR-18</b>
+            <b>NR-35</b>
+            <b>ART</b>
+            <b>PTS</b>
+            <b>RAC</b>
+            <b>LOTO</b>
+
+        </div>
+
+
+        <div
+            class="risk-grid"
+            id="risks"
+        ></div>
+
+
+        <article
+            class="card overview-main"
+            style="margin-top:20px"
+        >
+
+            <h3>
+                Condições para início da atividade
+            </h3>
+
+            <p>
+
+                Nenhuma intervenção deve ser iniciada
+                sem desenergização, bloqueio,
+                verificação de ausência de tensão,
+                aterramento quando aplicável,
+                isolamento da área, documentação
+                liberada e inspeção das condições
+                de trabalho.
+
+            </p>
+
+        </article>
+
+
+        <!-- CONSIDERAÇÕES -->
+
+        <div style="margin-top:45px">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="tag">
+                        07.1 · CONSIDERAÇÕES
+                    </span>
+
+                    <h2>
+                        Controles Operacionais
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quality-grid">
+
+                <article class="card quality-card">
+                    <h3>Inspeção Prévia</h3>
+                    <p>
+                        Ferramentas, equipamentos,
+                        veículos e área de trabalho.
+                    </p>
+                </article>
+
+                <article class="card quality-card">
+                    <h3>Interferências</h3>
+                    <p>
+                        Qualquer interferência ou
+                        desvio deve provocar paralisação
+                        e avaliação da liderança.
+                    </p>
+                </article>
+
+                <article class="card quality-card">
+                    <h3>Área de Trabalho</h3>
+                    <p>
+                        Manter isolamento, sinalização,
+                        limpeza e organização.
+                    </p>
+                </article>
+
+                <article class="card quality-card">
+                    <h3>Inspeção Ambiental</h3>
+                    <p>
+                        Avaliar condições climáticas,
+                        acesso e presença de animais
+                        peçonhentos.
+                    </p>
+                </article>
+
+                <article class="card quality-card">
+                    <h3>Direito de Recusa</h3>
+                    <p>
+                        Interromper a atividade diante
+                        de risco grave e iminente.
+                    </p>
+                </article>
+
+                <article class="card quality-card">
+                    <h3>Monitoramento</h3>
+                    <p>
+                        Avaliação contínua dos riscos
+                        durante toda a execução.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     QUALIDADE
+====================================================== -->
+
+<section
+    class="section alt"
+    id="qualidade"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    08 · QUALIDADE
+                </span>
+
+                <h2>
+                    Inspeção e Liberação
+                </h2>
+
+            </div>
+
+            <p>
+                Verificações necessárias antes
+                da liberação do sistema.
+            </p>
+
+        </div>
+
+
+        <div
+            class="quality-grid"
+            id="quality"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     DOCUMENTOS
+====================================================== -->
+
+<section
+    class="section"
+    id="documentos"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    09 · DOCUMENTOS
+                </span>
+
+                <h2>
+                    Central de Documentação
+                </h2>
+
+            </div>
+
+            <p>
+                Documentos técnicos, operacionais
+                e de segurança relacionados ao Tie-in.
+            </p>
+
+        </div>
+
+
+        <div
+            class="card docs"
+            id="docs"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     ACOMPANHAMENTO
+====================================================== -->
+
+<section
+    class="section alt"
+    id="acompanhamento"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    10 · ACOMPANHAMENTO
+                </span>
+
+                <h2>
+                    Avanço da Intervenção
+                </h2>
+
+            </div>
+
+            <span class="demo">
+                PAINEL OPERACIONAL
+            </span>
+
+        </div>
+
+
+        <div class="progress-layout">
+
+            <article class="card progress-main">
+
+                <div
+                    class="donut"
+                    id="overallDonut"
+                    style="--pct:35%"
+                >
+
+                    <div>
+
+                        <b>35%</b>
+
+                        <span>
+                            AVANÇO GERAL
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="bars"
+                    id="progressBars"
+                ></div>
+
+            </article>
+
+
+            <aside class="card next">
+
+                <small>
+                    PRÓXIMO MARCO
+                </small>
+
+                <h3>
+                    Parada Programada
+                </h3>
+
+                <p>
+                    Preparação para intervenção,
+                    bloqueio e liberação da frente.
+                </p>
+
+                <hr>
+
+                <small>
+                    SITUAÇÃO
+                </small>
+
+                <b>
+                    Planejado
+                </b>
+
+            </aside>
+
+        </div>
+
+
+        <!-- EVIDÊNCIAS -->
+
+        <div style="margin-top:50px">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="tag">
+                        10.1 · EVIDÊNCIAS
+                    </span>
+
+                    <h2>
+                        Registro Fotográfico
+                    </h2>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <button
+                        class="active"
+                        data-filter="all"
+                    >
+                        Todos
+                    </button>
+
+                    <button data-filter="antes">
+                        Antes
+                    </button>
+
+                    <button data-filter="durante">
+                        Durante
+                    </button>
+
+                    <button data-filter="depois">
+                        Depois
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="evidence-grid"
+                id="evidence"
+            ></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     EMERGÊNCIA
+====================================================== -->
+
+<section
+    class="section emergency"
+    id="emergencia"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    11 · EMERGÊNCIA
+                </span>
+
+                <h2>
+                    Plano de Emergência
+                </h2>
+
+            </div>
+
+            <p>
+                Informações críticas para resposta
+                imediata em caso de emergência.
+            </p>
+
+        </div>
+
+
+        <div class="emergency-card">
+
+            <div>
+
+                <span class="tag">
+                    EM CASO DE EMERGÊNCIA
+                </span>
+
+                <h2>
+                    Ponto de Encontro 11
+                </h2>
+
+                <p>
+                    Prédios Peneiramentos II — Usina
+                </p>
+
+
+                <div class="em-grid">
+
+                    <div>
+                        <small>BOMBEIROS</small>
+                        <b>0800 2850 193</b>
+                    </div>
+
+                    <div>
+                        <small>CECOM</small>
+                        <b>Faixa 03</b>
+                    </div>
+
+                    <div>
+                        <small>FISCALIZAÇÃO</small>
+                        <b>Faixa 11</b>
+                    </div>
+
+                    <div>
+                        <small>REFERÊNCIA</small>
+                        <b>Ponto 11</b>
+                    </div>
+
+                </div>
+
+
+                <p class="note">
+
+                    Em situação de emergência,
+                    mantenha a calma, informe corretamente
+                    o local, condição das vítimas e
+                    características da ocorrência.
+
+                </p>
+
+            </div>
+
+
+            <div
+                class="meeting project-image"
+                data-src="assets/img/Emergencia_01.jpg"
+            >
+
+                <div class="placeholder">
+
+                    <b>
+                        IMAGEM DO PONTO DE ENCONTRO
+                    </b>
+
+                    <small>
+                        assets/img/Emergencia_01.jpg
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTATOS EXTERNOS -->
+
+        <div
+            class="two-col"
+            style="margin-top:20px"
+        >
+
+            <article class="card">
+
+                <h3>
+                    Contatos Externos
+                </h3>
+
+                <div class="list-grid">
+
+                    <div class="list-item">
+                        Polícia Militar · (94) 99154-6464
+                    </div>
+
+                    <div class="list-item">
+                        Polícia Civil · (94) 3392-4509
+                    </div>
+
+                    <div class="list-item">
+                        Bombeiro Militar · (94) 3358-1541
+                    </div>
+
+                    <div class="list-item">
+                        SEMA · (94) 99197-3454
+                    </div>
+
+                    <div class="list-item">
+                        Hospital 5 de Outubro · (94) 99191-5665 / 6124
+                    </div>
+
+                    <div class="list-item">
+                        Hospital Municipal · (94) 3358-1671
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Ações Preventivas
+                </h3>
+
+                <div class="list-grid">
+
+                    <div class="list-item">
+                        Comunicação prévia de atividades de risco
+                    </div>
+
+                    <div class="list-item">
+                        Alinhamento com Bombeiros
+                    </div>
+
+                    <div class="list-item">
+                        Alinhamento com fiscalização
+                    </div>
+
+                    <div class="list-item">
+                        Identificação do ponto de emergência
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     RESPONSÁVEIS
+====================================================== -->
+
+<section
+    class="section"
+    id="responsaveis"
+>
+
+    <div class="shell">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="tag">
+                    12 · RESPONSÁVEIS
+                </span>
+
+                <h2>
+                    Responsáveis pelo Plano
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="quality-grid">
+
+            <article class="card quality-card">
+
+                <small>ELABORAÇÃO</small>
+
+                <h3>
+                    Ruan Maicon de Souza Costa
+                </h3>
+
+                <p>
+                    Supervisor de Planejamento
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <small>APROVAÇÃO</small>
+
+                <h3>
+                    Jacson Gomes de Souza
+                </h3>
+
+                <p>
+                    Gerente de Contrato — ENESA
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <small>EXECUÇÃO</small>
+
+                <h3>
+                    Hebert Paulo da Silva
+                </h3>
+
+                <p>
+                    Gerente de Produção — ENESA
+                </p>
+
+            </article>
+
+
+            <article class="card quality-card">
+
+                <small>EXECUÇÃO</small>
+
+                <h3>
+                    Tiago Barreto Moreira
+                </h3>
+
+                <p>
+                    Gerente de Produção — ENESA
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="shell footer-grid">
+
+        <div>
+            VALE
+            <i></i>
+            ENESA Engenharia
+        </div>
+
+        <strong>
+            TIE-IN DIGITAL · TR-2091KS-03 × CT-2032KS-08
+        </strong>
+
+        <div>
+            Projeto Serra Sul S11D
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================================
+     MOBILE BOTTOM NAV
+====================================================== -->
+
+<nav
+    class="bottom"
+    aria-label="Navegação móvel"
+>
+
+    <a href="#inicio">
+        ⌂
+        <span>Início</span>
+    </a>
+
+    <a href="#cronograma">
+        ◷
+        <span>Execução</span>
+    </a>
+
+    <button
+        id="register"
+        type="button"
+    >
+        ＋
+        <span>Registrar</span>
+    </button>
+
+    <a href="#documentos">
+        ▤
+        <span>Docs</span>
+    </a>
+
+    <a href="#emergencia">
+        ⚠
+        <span>Emergência</span>
+    </a>
+
+</nav>
+
+
+<!-- ======================================================
+     BACK TO TOP
+====================================================== -->
+
+<button
+    id="topBtn"
+    type="button"
+    aria-label="Voltar ao topo"
+>
+    ↑
+</button>
+
+
+<!-- ======================================================
+     MODAL
+====================================================== -->
+
+<div
+    class="modal"
+    id="modal"
+    aria-hidden="true"
+>
+
+    <div class="modal-box">
+
+        <button
+            id="modalClose"
+            type="button"
+            aria-label="Fechar"
+        >
+            ×
+        </button>
+
+        <div
+            id="modalContent"
+            class="image-modal-content"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<!-- ======================================================
+     TOAST
+====================================================== -->
+
+<div
+    class="toast"
+    id="toast"
+></div>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
